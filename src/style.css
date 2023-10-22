@@ -1,36 +1,104 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 body {
-  background: url(/images/bg-pattern-bottom.svg) no-repeat,
-    url(/images/bg-pattern-top.svg) no-repeat;
-  background-position: left top, right bottom;
-  background-size: 75%;
+  height: 100vh;
+  width: 100vw;
   background-color: hsl(185, 75%, 39%);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
 }
 
-img {
-  display: block;
-  margin: 70px auto;
-  background: #fff;
-  border-radius: 50%;
-  border: 10px solid #fff;
+.background-pattern-top img {
+  position: relative;
+  bottom: 500px;
+  right: 200px;
+  margin: 0;
 }
 
+.background-pattern-btm img {
+  position: absolute;
+  left: 800px;
+  top: 200px;
+}
+.card-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 20px 30px rgba(56, 56, 56, 0.5));
+  border-radius: 10px;
+}
 .card {
-  display: flex;
-
-  max-height: 100vh;
-
-  border: 1px solid black;
-  background: url(/images/bg-pattern-card.svg);
-  background-postion: top;
-  /* background-color: #fff; */
-
-  margin: 100px 500px;
+  border-radius: 20px;
+  background-color: #fff;
 }
-.attribution {
-  font-size: 11px;
+.card-pattern img {
+  width: 400px;
+  height: 130px;
+}
+
+.profile-pic img {
+  border-radius: 50px;
+  border: 5px solid #fff;
+  position: absolute;
+  top: 90px;
+  right: 145px;
+}
+.user-info {
+  margin-top: 80px;
   text-align: center;
+  color: hsl(229, 23%, 23%);
+}
+.username {
+  font-weight: 700;
+  display: inline;
+}
+.age {
+  display: inline;
+  color: hsl(0, 0%, 59%);
+  font-size: 16px;
+}
+.user-location {
+  font-size: 14px;
+  color: hsl(0, 0%, 59%);
+  padding-top: 10px;
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+hr {
+  margin-top: 10px;
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+.user-stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 50px;
+  font-weight: 700;
+}
+.ff-count,
+.like-count,
+.photo-count {
+  padding-top: 0px;
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: hsl(0, 0%, 59%);
+}
+
+@media (max-width: 375px) {
+  .card-wrapper {
+    width: 350px;
+    width: 300px;
+  }
+  .profile-pic img {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+  }
 }

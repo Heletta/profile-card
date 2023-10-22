@@ -5,48 +5,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="/src/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Profile card component</title>
-
 
 </head>
 
 <body>
+  <!-- Background pattern -->
+  <div class="background-pattern-top">
+    <img src="/images/bg-pattern-top.svg" alt="">
+  </div>
+  <div class="background-pattern-btm">
+    <img src="/images/bg-pattern-bottom.svg" alt="">
+  </div>
   <div class="card-wrapper">
     <div class="card">
-
-      <div class="column">
-        <img src="/images/image-victor.jpg" alt="Victor" width="120">
-        <p>Victor Crest <span>26</span></p>
-        <p>London</p>
-        <hr />
-        <div class="stats">
-          <p>80K
-            Followers </p>
-          <p>803K
-            Likes</p>
-          <p>1.4K
-            Photos</p>
+      <div class="card-pattern">
+        <img src="/images/bg-pattern-card.svg" alt="">
+      </div>
+      <div class="profile-pic"> <img src="/images/image-victor.jpg" alt="user profile picture"> </div>
+      <div class="user-info">
+        <div class="username">Victor Crest</div>
+        <div class="age">26</div>
+        <div class="user-location">London</div>
+      </div>
+      <hr>
+      <div class="user-stats">
+        <div class="followers">
+          <p> 80K</p>
+          <p class="ff-count">Followers</p>
+        </div>
+        <div class="likes">
+          <p>803K</p>
+          <p class="like-count">Likes</p>
+        </div>
+        <div class="photos">
+          <p> 1.4K</p>
+          <p class="photo-count">Photos</p>
         </div>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 
 </html>
